@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextField, Container, Box, Input } from '@mui/material';
+import { Button, TextField, Container, Box } from '@mui/material';
 
 const UploadPost = () => {
   const [image, setImage] = useState(null);
