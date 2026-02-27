@@ -1,13 +1,13 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import AppShell from '../components/layout/AppShell';
 import ProfileView from '../components/profile/ProfileView';
-import { useAuth } from '../context/AuthContext';
 
-export default function Profile() {
-  const { user } = useAuth();
+export default function UserProfile() {
+  const { username } = useParams();
   return (
     <AppShell>
-      <ProfileView username={user?.username} />
+      <ProfileView username={username} />
     </AppShell>
   );
 }
